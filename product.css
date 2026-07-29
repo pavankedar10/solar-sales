@@ -1,0 +1,241 @@
+/* Global Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #eeee;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeee;
+    padding: 17px;
+    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+}
+
+nav .logo img {
+    width: 90px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-top: -55px;
+    /* Add some spacing if necessary */
+    vertical-align: middle;
+    /* Align with the text */
+    position: absolute;
+    z-index: 1;
+
+}
+
+nav .logo {
+    margin-left: 12px;
+    font-size: 24px;
+    color: rgb(5, 167, 167);
+    margin-bottom: -30px;
+    vertical-align: bottom;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    margin-top: 7px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    margin-inline: 22px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a#home {
+    color: rgb(5, 167, 167);
+}
+
+ul li a:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+/* Icon Styling */
+nav ul li img {
+    width: 40px;
+    /* Adjust the size of the icon */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-left: 10px;
+    /* Add spacing between the icon and text links */
+    vertical-align: middle;
+    /* Align icon with text */
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: black(5, 167, 167);
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.979);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: black;
+}
+
+.product p {
+    font-size: 18px;
+    color: black;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.view-cart {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.view-cart a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.view-cart a:hover {
+    background-color: #0056b3;
+}
+
+/* Cart message styles */
+.cart-message {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: auto;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Back to Home Button */
+.back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-home a {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.back-home a:hover {
+    background-color: #c82333;
+}

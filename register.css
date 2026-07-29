@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body{
+    width: 100vw;
+    height: 100vh;
+    /* background: url(solar.png)no-repeat ; */
+    
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-background {
+  position: fixed; /* Stays in place even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Places the video behind the content */
+  }
+  
+  .video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+  }
+  
+  /* Content styling */
+  .content {
+  position: relative;
+  z-index: -1; /* Ensures content is above the video */
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  } 
+  
+  .container {
+    background-color: rgba(14, 13, 13, 0.411);
+    padding: 40px;
+    border-radius: 4px;
+    /* box-shadow: 0 4px 8px rgba(238, 235, 235, 0.1); */
+    box-shadow: 0 0 30px white;
+    width: 400px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .registration-form .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .registration-form label {
+    font-size: 14px;
+    color:white;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .registration-form input,
+  .registration-form select,
+  .registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .registration-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+        width: 100%;
+        height: 50px;
+        border-radius: 40px;
+        border: none;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 10px 0;
+        cursor: pointer;
+        transition: all 0.5s;
+        
+    }
+    
+    .submit-btn:hover
+    {
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+    }
+  
+  /* .submit-btn:hover {
+    background-color: #45a049;
+  } */
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #080808;
+    outline: none;
+  }

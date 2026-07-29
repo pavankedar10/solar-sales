@@ -1,0 +1,81 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #eeee;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeee;
+    padding: 17px;
+    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+}
+nav .logo img {
+    width: 90px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -55px; /* Add some spacing if necessary */
+    vertical-align: middle; /* Align with the text */
+    position: absolute;
+    z-index: 1;
+
+}
+nav .logo {
+    margin-left: 22px;
+    font-size: 24px;
+    color: rgb(5, 167, 167);
+    margin-bottom:-30px;
+    vertical-align: bottom;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    margin-top: 7px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    margin-inline: 22px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a#home {
+    color: rgb(5, 167, 167);
+}
+
+ul li a:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+
+/* Cart Icon */
+ul li a img {
+    color: red;
+    
+    width: 35px; /* Adjust cart icon size */
+    height: auto;
+    vertical-align: middle;
+    margin-left: -15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li a img:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+}
